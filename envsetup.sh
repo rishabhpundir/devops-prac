@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [-d "env"]
-then
+if [ -d "env" ]; then
     echo "Python venv exists!"
 else
     python3 -m venv env
@@ -12,10 +11,8 @@ source venv/bin/activate
 
 pip3 install -r requirements.txt
 
-
-if [-d "logs"]
-then
-    echo "Log Folders exists!"
+if [ -d "logs" ]; then
+    echo "Log Folders exist!"
 else
     mkdir logs
     touch logs/error.log logs/access.log
