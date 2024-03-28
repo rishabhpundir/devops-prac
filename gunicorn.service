@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/var/lib/jenkins/workspace/DjangoTest/hello
+WorkingDirectory=/var/lib/jenkins/workspace/DjangoTest
 ExecStart=/var/lib/jenkins/workspace/DjangoTest/env/bin/gunicorn \
           --error-logfile /var/lib/jenkins/workspace/DjangoTest/error.log \
           --workers 3 \
