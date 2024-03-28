@@ -7,7 +7,7 @@ else
 fi
 
 echo $PWD
-source venv/bin/activate
+source env/bin/activate
 
 pip3 install -r requirements.txt
 
