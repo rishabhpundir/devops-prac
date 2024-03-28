@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-cd /var/lib/jenkins/workspace/DjangoTest
 source env/bin/activate
+cd /var/lib/jenkins/workspace/DjangoTest
 
 python3 manage.py makemigrations
 python3 manage.py migrate
